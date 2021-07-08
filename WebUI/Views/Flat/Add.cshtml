@@ -1,0 +1,48 @@
+﻿@model FlatViewModel
+@{ ViewData["Title"] = "Add|Flat"; }
+
+
+@using (Html.BeginForm())
+{
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.RoomType)
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.RoomType)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Block)
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Block)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.FloorNo)
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.FloorNo)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.IsEmpty)
+        <div class="custom-checkbox">
+            @Html.EditorFor(model => model.IsEmpty)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.UserId)
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.UserId)
+        </div>
+    </div>
+
+    <input type="submit" value="Add" class="btn btn-primary" />
+}
+
+
+
+
